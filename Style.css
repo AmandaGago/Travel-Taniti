@@ -314,6 +314,7 @@ q {font-style: italic;}
     overflow: hidden;
     padding:10px;
 }
+}
 
 @media screen and (max-width:600px) {
     .flip-box-1 img, .flip-box-2 img, .flip-box-3 img{
