@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <title>Travel Taniti</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -27,8 +27,6 @@
             <h2>We Welcome you to</h2>
             <h1>Travel Taniti</h1>
             <button>Explore</button>
-        </div>
-            </div>
         </div>
     </div>
 
@@ -90,41 +88,87 @@
             </div>
         </div>
     </div>
-    <div class="all-flip-boxes">
-    <div class="flip-box-1">
-        <div class="flip-box-inner">
-            <div class="flip-box-front">
-                <img src="https://fastly.picsum.photos/id/1073/200/200.jpg?hmac=LPcHRYBCZpePYgP88_kX9NqVC1Jcdqch62FZtUH_s-s"
-                    alt="flip image">
+    <div class="all-slide-content">
+        <h3>lorem Ipsum </h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, qui!</q>
+                <p class="author">- lorem ipsum </p>
             </div>
-            <div class="flip-box-back">
-                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</h4>
+            <div class="mySlides">
+                <q> adipisicing elit. Sunt, qui!</q>
+                <p class="author">- lorem ipsum </p>
             </div>
-        </div>
-        </div>
-            <div class="flip-box-2">
-        <div class="flip-box-inner">
-            <div class="flip-box-front">
-                <img src="https://fastly.picsum.photos/id/1073/200/200.jpg?hmac=LPcHRYBCZpePYgP88_kX9NqVC1Jcdqch62FZtUH_s-s"
-                    alt="flip image">
+            <div class="mySlides">
+                <q> dolor sit amet consectetur adipisicing elit. Sunt, qui!</q>
+                <p class="author">- lorem ipsum </p>
             </div>
-            <div class="flip-box-back">
-                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</h4>
+            <div class="mySlides">
+                <q> amet consectetur adipisicing elit. Sunt, qui!</q>
+                <p class="author">- lorem ipsum </p>
             </div>
-        </div>
-        </div>
-            <div class="flip-box-3">
-        <div class="flip-box-inner">
-            <div class="flip-box-front">
-                <img src="https://fastly.picsum.photos/id/1073/200/200.jpg?hmac=LPcHRYBCZpePYgP88_kX9NqVC1Jcdqch62FZtUH_s-s"
-                    alt="flip image">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <div class="flip-box-back">
-                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</h4>
-            </div>
-        </div>
         </div>
     </div>
+    <div class="all-flip-content">
+        <h3>Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque quisquam fugit nam cupiditate cum?</p>
+        <div class="all-flip-boxes">
+            <div class="flip-box-1">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="https://fastly.picsum.photos/id/1073/200/200.jpg?hmac=LPcHRYBCZpePYgP88_kX9NqVC1Jcdqch62FZtUH_s-s"
+                            alt="flip image">
+                    </div>
+                    <div class="flip-box-back">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box-2">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="https://fastly.picsum.photos/id/1073/200/200.jpg?hmac=LPcHRYBCZpePYgP88_kX9NqVC1Jcdqch62FZtUH_s-s"
+                            alt="flip image">
+                    </div>
+                    <div class="flip-box-back">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box-3">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="https://fastly.picsum.photos/id/1073/200/200.jpg?hmac=LPcHRYBCZpePYgP88_kX9NqVC1Jcdqch62FZtUH_s-s"
+                            alt="flip image">
+                    </div>
+                    <div class="flip-box-back">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top: 55px; background-color: white; box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.3);">
+        <div class="footer-text" style="padding: 25; border-bottom: solid .6px rgba(0, 0, 0, 0.5);  display: flex;
+    justify-content: space-evenly;gap:10px; align-items: center;
+    overflow: hidden;">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Activites">Activites</a>
+        </div>
+        <div class="Logo" style="text-align:center;">
+            <p> © 2025 Taniti Travel </p>
+        </div>
+    </footer>
 
 </body>
 <script>
