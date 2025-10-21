@@ -179,12 +179,9 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    gap: 20px;
+    gap: 10px;
     background-color: whitesmoke;
-    margin-bottom: 250px;
-}
-
-.card {
+    margin-bottom: 21px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease-in-out;
     display: flex;
@@ -198,8 +195,7 @@ html {
 }
 
 .card img {
-    width: 60%;
-    height: 500px;
+    width: 30%;
     /* fixed height for all images */
     object-fit: cover;
     /* ensures image fills the box without distortion */
@@ -207,6 +203,7 @@ html {
 
 .card-container {
     padding: 2px 10px;
+    text-decoration: none;
 
 }
 
@@ -327,7 +324,12 @@ html {
 /*end flip box for mobile*/
 
 /*slideshow*/
-.heading-slide{font-size: 5vw; text-align:center; margin-bottom:0;}
+.heading-slide {
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 0;
+}
+
 .slideshow-container {
     position: relative;
     text-align: center;
@@ -428,6 +430,61 @@ q {
 
 /*end slideshow*/
 
+ /*hero section*/
+    .hero-image-Travel-tips {
+        background-image: url("/Assets/Taniti-Island.png");
+
+        height: 95%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-text-plan {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .sub-text-hero-plan {
+        font-size: 6vw;
+        margin-bottom: 0px;
+    }
+
+    .main-text-hero-plan {
+        font-size: 20vw;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+
+    .hero-button-plan {
+        background-color: #2ec4b6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        transform: scale(1.5);
+        margin-top: 0;
+    }
+
+    .hero-button-plan:hover {
+        background-color: #ffa630;
+    }
+
+    /*end hero section*/
+    .tips-and-tricks {
+        color: black;
+        text-align: center;
+    }
+
+    .heading-tips {
+        font-size: 5vw;
+    }
 
 
 
@@ -635,21 +692,174 @@ q {
         color: white;
     }
 
-    .activites-heading{
+    .activites-heading {
         font-size: 10vw;
         background-color: #0e2153;
         margin: 0;
         color: whitesmoke;
         text-align: center;
     }
+
     /*end image scroll for activites*/
 
     /*reviews*/
 
-.heading-slide{
-    font-size: 10vw;
-    margin-top: 0;
-}
-    /*end reviews*/
+    .heading-slide {
+        font-size: 10vw;
+        margin-top: 0;
+    }
 
+    /*end reviews*/
+    /*  send mesage */
+
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+
+        padding: 10px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 4px;
+
+        box-sizing: border-box;
+
+        margin-top: 5px;
+
+        margin-bottom: 16px;
+
+        resize: vertical
+    }
+
+
+    input[type=submit] {
+        background-color:#ffa630;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+    input[type=submit]:hover {
+        background-color:#f1f1f1;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #2ec4b6;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    /* end send mesage */
+
+
+    /*hero section*/
+    .hero-image-Travel-tips {
+        background-image: url("/Assets/Taniti-Island.png");
+
+        height: 95%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-text-plan {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .sub-text-hero-plan {
+        font-size: 6vw;
+        margin-bottom: 0px;
+    }
+
+    .main-text-hero-plan {
+        font-size: 20vw;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+
+    .hero-button-plan {
+        background-color: #2ec4b6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        transform: scale(1.5);
+        margin-top: 0;
+    }
+
+    .hero-button-plan:hover {
+        background-color: #ffa630;
+    }
+
+    /*end hero section*/
+    .tips-and-tricks {
+        color: black;
+        text-align: center;
+    }
+
+    .heading-tips {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 3000px; ) {
+
+
+    .All-map-active {
+        display: none;
+    }
+
+    .activites-mobile-unactive {
+        display: block;
+    }
+
+    .scroll-container {
+        background-color: #0e2153;
+        overflow-x: auto;
+        display: flex;
+        gap: 1rem;
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .image-item {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+
+    .image-item img {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .image-item figcaption {
+        margin-top: 5px;
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .activites-heading {
+        font-size: 10vw;
+        background-color: #0e2153;
+        margin: 0;
+        color: whitesmoke;
+        text-align: center;
+    }
 }
