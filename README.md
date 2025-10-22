@@ -28,7 +28,7 @@ Please note that this website is **only a prototype**. Not all features are full
 ## How to View
 
 This project is hosted on **GitHub Pages**. You can view the live prototype by visiting:
-`https://AmandaGago.github.io/Travel-Taniti /`
+(https://amandagago.github.io/Travel-Taniti/)
 
 ## Future Improvements
 
